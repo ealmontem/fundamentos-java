@@ -9,7 +9,7 @@ public class App {
 
         Aguila aguila1 = new Aguila("Brimds", 3);
         System.out.println("Nombre: " + aguila1.nombre);
-        System.out.println("Edad" + aguila1.edad);
+        System.out.println("Edad: " + aguila1.edad);
 
         aguila1.volar();
 

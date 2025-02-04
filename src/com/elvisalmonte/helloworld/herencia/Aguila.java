@@ -5,6 +5,11 @@ public class Aguila extends Ave{
         super(nombre, edad);
     }
 
+    @Override
+    void volar(){
+        System.out.println("Si puedo volar");
+    }
+
 
 
 }
