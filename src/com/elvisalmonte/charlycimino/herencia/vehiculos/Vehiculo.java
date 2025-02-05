@@ -1,12 +1,15 @@
-package com.elvisalmonte.charlycimino.herencia;
+package com.elvisalmonte.charlycimino.herencia.vehiculos;
 
 public class Vehiculo {
-   private String marca;
-   private String modelo;
-   private String patente;
+    protected String marca;
+    protected String modelo;
+    protected String patente;
 
 
    public void acelerar(){
+       System.out.println(marca);
+       System.out.println(modelo);
+       System.out.println(patente);
         System.out.println("El Vehiculo esta acelerando....");
     }
 
