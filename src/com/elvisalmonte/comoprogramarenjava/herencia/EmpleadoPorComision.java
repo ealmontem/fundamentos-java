@@ -47,7 +47,15 @@ public class EmpleadoPorComision extends Object {
         return tarifaComision;
     }
 
+    public void setVentasBrutas(double ventasBrutas){
 
+        if (ventasBrutas <= 0.0)
+            throw new IllegalArgumentException(
+                    "Las ventas brutas deben ser >= 0.0"
+            ) ;
+
+        this.ventasBrutas = ventasBrutas;
+    }
 
 
 }
