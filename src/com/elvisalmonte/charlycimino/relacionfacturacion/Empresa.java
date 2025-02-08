@@ -1,12 +1,12 @@
 package com.elvisalmonte.charlycimino.relacionfacturacion;
 
-public class Persona {
+public class Empresa {
     private String nombre;
-    private String apellido;
+    private Direccion direccion;
 
-    public Persona(String nombre, String apellido) {
+    public Empresa(String nombre, Direccion direccion) {
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.direccion = direccion;
     }
 
     public String getNombre() {
@@ -17,19 +17,19 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public Direccion getDireccion() {
+        return direccion;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
     }
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "Empresa{" +
                 "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
+                ", direccion=" + direccion +
                 '}';
     }
 }
