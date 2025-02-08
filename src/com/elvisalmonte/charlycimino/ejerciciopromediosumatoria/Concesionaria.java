@@ -1,12 +1,13 @@
-package com.elvisalmonte.charlycimino.relaciones;
+package com.elvisalmonte.charlycimino.ejerciciopromediosumatoria;
+
+
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Concesionaria {
     private String nombre;
     private ArrayList<Auto> autos;
-    private boolean mostrarEnListado = false;
+
 
     public Concesionaria(String nombre) {
         this.nombre = nombre;
@@ -14,12 +15,17 @@ public class Concesionaria {
 
     }
 
-    public void mostrarAutos(){
-        if (autos.isEmpty()){
+    public void mostrarAutos() {
+        if (autos.isEmpty()) {
             System.out.println("No hay autos");
-        }else {
-            for (int i = 0; i < autos.size(); i++) {
-                System.out.println(autos.get(i));
+        } else {
+//            for (int i = 0; i < autos.size(); i++) {
+//                Auto a = autos.get(i);
+//                System.out.println(a);
+//            }
+            for (Auto a : autos) {
+                if (a.isPuedeMostrarse())
+                System.out.println(a);
             }
         }
     }

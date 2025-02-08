@@ -1,5 +1,4 @@
-package com.elvisalmonte.charlycimino.cicloforeach;
-
+package com.elvisalmonte.charlycimino.ejerciciopromediosumatoria;
 
 
 public class Principal {
